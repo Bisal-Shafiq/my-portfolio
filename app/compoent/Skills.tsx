@@ -5,7 +5,8 @@ export default function Skills() {
     { name: "CSS", level: 75 },
     { name: "Bootstrap", level: 60 },
     { name: "TypeScript", level: 60 },
-    { name: "Python", level: 70 }
+    { name: "Python", level: 70 },
+    { name: "Python", level: 50 }
   ];
 
   return (
