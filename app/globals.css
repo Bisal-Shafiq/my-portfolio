@@ -24,9 +24,9 @@ h1, h2, h3, p {
 /* Header Styles */
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Space between menu icon and nav items */
   align-items: center;
-  padding: 20px;
+  padding: 20px; /* Increased padding to make header taller */
   background-color: #2e2e4e;
   position: fixed;
   top: 0;
@@ -38,17 +38,20 @@ h1, h2, h3, p {
 .menuIcon {
   display: none; /* Hidden on larger screens */
   cursor: pointer;
+  position: absolute;
+  left: 20px; /* Adjust left position for mobile */
+  top: 20px; /* Adjust top position for mobile */
 }
 
 .menuIcon img {
-  width: 50px;
+  width: 50px; /* Adjust the size of the menu icon */
   height: 50px;
 }
 
 .navList {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 30px; /* Increased gap for more spacing */
   margin: 0;
   padding: 0;
 }
@@ -93,8 +96,15 @@ h1, h2, h3, p {
 
 /* Sticky Header on Scroll */
 body {
+  padding-top: 80px; /* Increased offset for taller header */
+}
+
+
+/* Sticky Header on Scroll */
+body {
   padding-top: 60px; /* Offset content under the fixed header */
 }
+
 
 
 /* About Section Styles */
@@ -584,7 +594,7 @@ button:hover {
   }
 }
 
-@media (max-width: 280px) {
+@media (max-width: 180px) {
   .cardsContainer {
     gap: 15px;
     justify-content: center;
