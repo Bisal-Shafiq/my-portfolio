@@ -15,7 +15,7 @@ export default function About() {
       <div className="aboutContent">
         <div className="imageContainer">
           {/* Using the Next.js Image component */}
-          <img src="/img.jpg" alt="Bisal Shafiq" className="aboutImage" />
+          <img src="/img.jpg" alt="img" className="aboutImage" />
         </div>
         <div className="textContainer">
           <h1>Hi, I am Bisal Shafiq</h1>
