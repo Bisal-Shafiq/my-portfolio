@@ -584,7 +584,7 @@ button:hover {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 280px) {
   .cardsContainer {
     gap: 15px;
     justify-content: center;
