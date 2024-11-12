@@ -3,22 +3,22 @@ export default function Services() {
   const services = [
     { 
       title: "Frontend Development", 
-      description: "Building responsive websites.", 
+      description: "Building Responsive Websites.", 
       image: "/code.png" // Added image path
     },
     { 
       title: "UI/UX Design", 
-      description: "Designing user-friendly interfaces.", 
+      description: "Designing User-Friendly Interfaces.", 
       image: "/uiux.png" // Added image path
     },
     { 
       title: "Website Designing", 
-      description: "Creating mobile apps for iOS and Android.",
+      description: "Creating Responsive Design for Websites.",
       image: "/web.png" // Added image path
     },
     { 
       title: "App Designing", 
-      description: "Creating mobile apps for iOS and Android.",
+      description: "Creating Mobile Apps Design for Android.",
       image: "/app.png" // Added image path
     },
 
