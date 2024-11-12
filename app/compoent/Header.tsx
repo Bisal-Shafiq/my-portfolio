@@ -16,6 +16,7 @@ export default function Header() {
 
   return (
     <header className="header">
+      <h1 style={{textAlign:"center", paddingLeft:"60px" , paddingTop:"5px"}}>Bisal Shafiq</h1>
       <nav>
         <div className="menuIcon" onClick={toggleMenu}>
           <img src="/menu.png" alt="Menu Icon" />
