@@ -24,12 +24,25 @@ h1, h2, h3, p {
 /* Header Styles */
 .header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   padding: 20px;
   background-color: #2e2e4e;
-  position: sticky;
+  position: fixed;
   top: 0;
+  width: 100%;
   z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Optional: Adds shadow to the header */
+}
+
+.menuIcon {
+  display: none; /* Hidden on larger screens */
+  cursor: pointer;
+}
+
+.menuIcon img {
+  width: 25px;
+  height: 25px;
 }
 
 .navList {
@@ -53,36 +66,36 @@ h1, h2, h3, p {
   color: #ff69b4;
 }
 
-/* Responsive Styles */
+/* Mobile Responsive Styles */
 @media (max-width: 768px) {
-  .header {
-    padding: 15px;
+  .menuIcon {
+    display: block; /* Show the menu icon on mobile */
   }
 
   .navList {
-    gap: 15px;
+    display: none; /* Hide menu items by default on mobile */
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 60px; /* Set position of dropdown menu */
+    left: 0;
+    width: 100%;
+    background-color: #2e2e4e;
+    padding: 20px 0;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
   }
 
-  .navList a {
-    font-size: 1rem;
+  .navList.show {
+    display: flex; /* Show menu items when 'show' class is added */
   }
 }
 
-@media (max-width: 480px) {
-  .header {
-    padding: 10px;
-  }
-
-  .navList {
-    flex-direction: column; /* Stack the navigation links vertically */
-    align-items: center; /* Center align the items */
-    gap: 10px;
-  }
-
-  .navList a {
-    font-size: 1.1rem;
-  }
+/* Sticky Header on Scroll */
+body {
+  padding-top: 60px; /* Offset content under the fixed header */
 }
+
 
 /* About Section Styles */
 .about {
