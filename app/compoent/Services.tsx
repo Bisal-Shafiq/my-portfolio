@@ -32,7 +32,7 @@ export default function Services() {
           <div key={index} className="card">
             <img src={service.image} alt={service.title} className="card-image" />
             <h3>{service.title}</h3>
-            <p>{service.description}</p>
+            <p style={{textAlign:"center"}}>{service.description}</p>
           </div>
         ))}
       </div>
