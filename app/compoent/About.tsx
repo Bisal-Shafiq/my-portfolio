@@ -3,10 +3,10 @@
 export default function About() {
   const downloadCV = () => {
     // Here, you can link directly to the PDF file for downloading
-    const cvUrl = "/BS Software Engineering (BSSE).pdf"; // Replace this with the actual URL of your PDF
+    const cvUrl = "/BisalShafiq.pdf"; // Replace this with the actual URL of your PDF
     const link = document.createElement('a');
     link.href = cvUrl;
-    link.download = "BS Software Engineering (BSSE).pdf"; // Specify the default filename for the downloaded CV
+    link.download = "BisalShafiq.pdf"; // Specify the default filename for the downloaded CV
     link.click();
   };
 
